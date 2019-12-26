@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Version>0.0.1</Version>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Company>The Lyn</Company>
+    <PackageProjectUrl>https://github.com/lynheo/IntelliString</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/lynheo/IntelliiString</RepositoryUrl>
+    <PackageTags>String, C#</PackageTags>
+    <Authors>Lyn</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Description>Collection of string helper method</Description>
+    <Nullable>enable</Nullable>
+    <RepositoryType>GIT</RepositoryType>
+    <PackageId>Lyn.IntelliString</PackageId>
+    <Product>Lyn.IntelliString</Product>
+  </PropertyGroup>
+</Project>
