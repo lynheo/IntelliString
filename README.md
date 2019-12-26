@@ -1,5 +1,5 @@
-# IntelliEnum
-Lyn.IntelliEnum is C# language useful string helper method collection.
+# IntelliString
+Lyn.IntelliString is C# language useful string helper method collection.
 
 ## Install via NuGet 
 ------------------
@@ -12,33 +12,21 @@ Lyn.IntelliEnum is C# language useful string helper method collection.
 > - Add RandomHash Method
 
 
-## Lyn.IntelliEnum Demo
+## Lyn.IntelliString Demo
 ```C#
-using Lyn.IntelliEnum;
+using Lyn.IntelliString;
 
-using cm = System.ComponentModel;
-
-namespace Lyn.IntelliEnum
+namespace Lyn.IntelliString.UnitTest
 {
-    public enum TestEnum
+    [TestClass]
+    public class IntelliStringTest
     {
-        [cm.Description("Value Test 01")]
-        Value01 = 1,
-        [cm.Description("Value Test 02")]
-        Value02 = 2,
-    }
-
- 
-    public class IntelliEnumTest
-    {
-        public void TestGetDescriptionStrings()
+        [TestMethod]
+        public void TestHash()
         {
-            var testEnumStrings = IntelliEnum.IntelliEnum.GetDescriptionStrings<TestEnum>();
-        }
+            var testString = "Intelli String Test";
 
-        public void TestGetDescriptionStringMap()
-        {
-            var testEnumDict = IntelliEnum.IntelliEnum.GetDescriptionStringMap<TestEnum>();
+            Assert.IsTrue(testString.Hash() == IntelliString.HashString("Intelli String Test"));
         }
     }
 }
